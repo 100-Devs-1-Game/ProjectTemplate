@@ -1,0 +1,62 @@
+# Tests of the project
+name: Pre-commit and Tests
+
+env:
+  GODOT_VERSION: 4.4.1
+# Whenever a tag push matching pattern "v*" then run the job
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+    - uses: Scony/godot-gdscript-toolkit@master
+    - uses: pre-commit/action@v3.0.1
+
+  # This could be a pre-commit hook but it's quite expensive, so we only run it on CI
+  godot-validator:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: Checkout LFS objects
+        run: git lfs pull
+
+      - name: Run Validation
+        run: |
+          set -eo pipefail
+          ./.hooks/validate_godot_project.py --project-root src/
+
+  tests:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: Checkout LFS objects
+        run: git lfs pull
+
+      - name: Git Diff Pre-Test
+        run: |
+          git status
+          git diff
+
+      - name: unit tests with godot gut
+        uses: 100-Devs-1-Game/godot-gut-ci@feature/better-ci-errors
+        with:
+          godot_version: ${{ env.GODOT_VERSION }}
+          gut_params: -gdir=res://tests/unit
+          project_path: src
+
+      - name: Validate Git Diff
+        run: |
+          ./scripts/validate_git_diff.sh

@@ -1,3 +1,14 @@
 [gd_scene format=3 uid="uid://cygqjanirnqqt"]
 
 [node name="Node" type="Node"]
+
+[node name="FmodBankLoader" type="FmodBankLoader" parent="."]
+bank_paths = ["res://assets/fmod/Master.strings.bank", "res://assets/fmod/Master.bank", "res://assets/fmod/VO.bank"]
+
+[node name="FmodListener2D" type="FmodListener2D" parent="."]
+
+[node name="FmodEventEmitter2D" type="FmodEventEmitter2D" parent="."]
+event_name = "event:/VO/Welcome"
+event_guid = "{d7eabb29-abd9-4057-b408-eef937d66f2a}"
+autoplay = true
+auto_release = true

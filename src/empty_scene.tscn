@@ -1,9 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cygqjanirnqqt"]
-
-[ext_resource type="Script" uid="uid://c1osrer787cv7" path="res://free_fmod.gd" id="1_oplr2"]
+[gd_scene format=3 uid="uid://cygqjanirnqqt"]
 
 [node name="Node" type="Node"]
-script = ExtResource("1_oplr2")
 
 [node name="FmodBankLoader" type="FmodBankLoader" parent="."]
 bank_paths = ["res://assets/fmod/Master.strings.bank", "res://assets/fmod/Master.bank", "res://assets/fmod/VO.bank"]

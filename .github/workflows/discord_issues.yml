@@ -1,6 +1,6 @@
 name: Discord review
 on:
-  issue:
+  issues:
     types: [opened]
 
 jobs:

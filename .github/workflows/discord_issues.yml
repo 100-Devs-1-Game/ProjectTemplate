@@ -12,4 +12,4 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_ISSUES_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          args: 'Issue created for ${{ github.event.repository.name }}: ${{ github.event.issue.title }} \n ${{ github.event.issue.url }}'
+          args: 'Issue created for ${{ github.event.repository.name }}: ${{ github.event.issue.title }} - ${{ github.event.issue.html_url }}'

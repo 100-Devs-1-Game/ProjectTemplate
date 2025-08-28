@@ -1,0 +1,50 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "155015306",
+    "Type": "Event",
+    "GUID": "{1DEE6599-79D1-4AF6-B964-07803DD4D7CA}",
+    "Language": "SFX",
+    "Hash": "{8F43F2BB-1278-05B2-37F0-F9C8564522EB}",
+    "ObjectPath": "testevent3",
+    "ShortName": "testevent3",
+    "Path": "Event/testevent3.bnk",
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "511021499",
+       "Name": "ALARM 01",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Factory Synth One\\SFX\\ALARM 01\\ALARM 01",
+       "GUID": "{012A3631-2042-4E49-9275-2B73D546C973}",
+       "LibName": "Wwise Synth One",
+       "LibId": "9699330"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "155015306",
+      "Name": "testevent3",
+      "ObjectPath": "\\Events\\Default Work Unit\\testevent3",
+      "GUID": "{1DEE6599-79D1-4AF6-B964-07803DD4D7CA}",
+      "DurationType": "Unknown",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "511021499"
+        }
+       ]
+      }
+     }
+    ],
+    "GameParameters": []
+   }
+  ],
+  "FileHash": "{571FF153-61D0-4100-2503-1E0F52445310}"
+ }
+}

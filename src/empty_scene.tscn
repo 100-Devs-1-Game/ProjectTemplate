@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://cygqjanirnqqt"]
+[gd_scene load_steps=2 format=3 uid="uid://cygqjanirnqqt"]
+
+[ext_resource type="WwiseEvent" uid="uid://cssnxfxckuhn" path="res://Wwise/resources/Event/{1DEE6599-79D1-4AF6-B964-07803DD4D7CA}.tres" id="1_oplr2"]
 
 [node name="Node" type="Node"]
+
+[node name="AkListener2D" type="AkListener2D" parent="."]
+
+[node name="AkEvent2D" type="AkEvent2D" parent="."]
+event = ExtResource("1_oplr2")
+trigger_on = 1
+stop_on = 1
+stop_fade_time = 3000

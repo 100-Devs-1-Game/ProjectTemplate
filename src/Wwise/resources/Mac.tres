@@ -1,0 +1,5 @@
+[gd_resource type="WwisePlatformInfo" format=3 uid="uid://lmh0m2eayjc7"]
+
+[resource]
+platform_name = "Mac"
+platform_path = "generated_soundbanks/mac"

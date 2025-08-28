@@ -1,0 +1,43 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "GTA2",
+   "GUID": "{F45E56BC-6980-411C-84D5-80E56D5A0704}",
+   "Generator": "2024.1.6.8842"
+  },
+  "CacheRoot": "C:/Users/Zeph/Documents/WwiseProjects/GTA2/.cache",
+  "Platforms": [
+   {
+    "Name": "Linux",
+    "GUID": "{208655EB-1599-44C1-B388-F677D57B8840}",
+    "BasePlatform": "Linux",
+    "BasePlatformGUID": "{BD0BDF13-3125-454F-8BFD-319537169F81}",
+    "Path": "generated_soundbanks/linux"
+   },
+   {
+    "Name": "Mac",
+    "GUID": "{FF525FB7-1C47-47CD-8648-A0171FBC8839}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "generated_soundbanks/mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{0565D01B-ACEE-41BC-977C-C160D70F49CA}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "generated_soundbanks/windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{E95F178C-8350-449D-AE4E-1D2FAF0D10B1}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{0B45BCAC-7E05-984C-910A-C37137CD2D75}"
+ }
+}

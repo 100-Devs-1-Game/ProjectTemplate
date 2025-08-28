@@ -17,7 +17,7 @@ appear on the DebugPopup.
 1. Run your scene.
 1. By default, the DebugPopup is invisible.
 1. You can press any of the hotkeys to execute a function.
-1. Press the hotkey (default X) to display the DebugPopup.
+1. Press the hotkey (default K) to display the DebugPopup.
 1. Click your debug button and ensure that it executes the function
    you defined in the parent scene.
 

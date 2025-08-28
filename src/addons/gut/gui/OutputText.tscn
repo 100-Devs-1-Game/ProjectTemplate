@@ -1,7 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bqmo4dj64c7yl"]
 
 [ext_resource type="Script" uid="uid://cax5phqs8acmu" path="res://addons/gut/gui/OutputText.gd" id="1"]
-[ext_resource type="FontFile" uid="uid://bnh0lslf4yh87" path="res://addons/gut/fonts/CourierPrime-Regular.ttf" id="2_huwnh"]
 
 [sub_resource type="Image" id="Image_b4xqv"]
 data = {
@@ -88,7 +87,6 @@ icon = SubResource("ImageTexture_42opa")
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("2_huwnh")
 theme_override_font_sizes/font_size = 30
 deselect_on_focus_loss_enabled = false
 virtual_keyboard_enabled = false

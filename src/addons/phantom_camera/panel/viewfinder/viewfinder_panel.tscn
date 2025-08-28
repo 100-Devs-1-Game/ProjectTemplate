@@ -2,9 +2,7 @@
 
 [ext_resource type="Script" uid="uid://drmv3363t8amc" path="res://addons/phantom_camera/scripts/panel/viewfinder/viewfinder.gd" id="1_utvi8"]
 [ext_resource type="StyleBox" uid="uid://dpa7yvxlq043a" path="res://addons/phantom_camera/panel/viewfinder/deadzone_style_box.tres" id="2_uabt4"]
-[ext_resource type="FontFile" uid="uid://c4mm3of2mc8o5" path="res://addons/phantom_camera/fonts/Nunito-Black.ttf" id="3_li3i3"]
 [ext_resource type="Texture2D" uid="uid://5fatldiu7dd5" path="res://addons/phantom_camera/icons/phantom_camera_host.svg" id="4_lcg1p"]
-[ext_resource type="FontFile" uid="uid://dve7mgsjik4dg" path="res://addons/phantom_camera/fonts/Nunito-Regular.ttf" id="5_4jhax"]
 [ext_resource type="Texture2D" uid="uid://dy8eifa6aw2en" path="res://addons/phantom_camera/icons/misc/PriorityOverride.svg" id="6_ptuth"]
 [ext_resource type="Script" uid="uid://c84cxry3t35ny" path="res://addons/phantom_camera/scripts/panel/viewfinder/host_list.gd" id="7_kpij0"]
 [ext_resource type="Theme" uid="uid://bhppejri5dbsf" path="res://addons/phantom_camera/themes/theme.tres" id="8_b4akn"]
@@ -209,7 +207,6 @@ stretch = true
 [node name="SubViewport" type="SubViewport" parent="Viewfinder/SubViewportContainer"]
 unique_name_in_owner = true
 handle_input_locally = false
-canvas_item_default_texture_filter = 0
 gui_disable_input = true
 size = Vector2i(1152, 648)
 size_2d_override_stretch = true
@@ -353,7 +350,6 @@ offset_top = -8.0
 offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_li3i3")
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxEmpty_iho1a")
 text = "Control scenes are not supported"
@@ -410,8 +406,6 @@ stretch_mode = 5
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_fonts/normal_font = ExtResource("5_4jhax")
-theme_override_fonts/bold_font = ExtResource("3_li3i3")
 theme_override_font_sizes/normal_font_size = 24
 theme_override_font_sizes/bold_font_size = 24
 theme_override_styles/focus = SubResource("StyleBoxEmpty_obaj6")
@@ -427,7 +421,6 @@ layout_mode = 2
 size_flags_horizontal = 4
 focus_mode = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("3_li3i3")
 theme_override_font_sizes/font_size = 24
 theme_override_styles/focus = SubResource("StyleBoxEmpty_4b76l")
 theme_override_styles/hover = SubResource("StyleBoxFlat_yh38y")
@@ -446,8 +439,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_fonts/normal_font = ExtResource("5_4jhax")
-theme_override_fonts/bold_font = ExtResource("3_li3i3")
 theme_override_font_sizes/normal_font_size = 24
 theme_override_font_sizes/bold_font_size = 24
 theme_override_styles/focus = SubResource("StyleBoxEmpty_g5wua")
@@ -486,7 +477,6 @@ offset_left = 30.0
 offset_top = 1.0
 offset_right = 140.0
 offset_bottom = 24.0
-theme_override_fonts/font = ExtResource("3_li3i3")
 theme_override_font_sizes/font_size = 14
 text = "OVERRIDDEN BY"
 vertical_alignment = 1
@@ -498,7 +488,6 @@ offset_left = 6.0
 offset_top = 21.0
 offset_right = 153.0
 offset_bottom = 44.0
-theme_override_fonts/font = ExtResource("5_4jhax")
 theme_override_font_sizes/font_size = 14
 text = "PCam_Name
 "

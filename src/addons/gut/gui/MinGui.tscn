@@ -98,6 +98,12 @@ clip_contents = true
 layout_mode = 2
 size_flags_vertical = 3
 
+[node name="Path" type="Label" parent="MainBox/Body/BodyRows/PathDisplay"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+clip_text = true
+text_overrun_behavior = 3
+
 [node name="HBoxContainer" type="HBoxContainer" parent="MainBox/Body/BodyRows/PathDisplay"]
 clip_contents = true
 layout_mode = 2

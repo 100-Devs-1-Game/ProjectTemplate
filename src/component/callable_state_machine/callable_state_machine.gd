@@ -1,4 +1,4 @@
-class_name NoxCallableStateMachine extends RefCounted
+class_name CallableStateMachine extends RefCounted
 
 signal state_changed(from: Callable, to: Callable)
 
@@ -51,7 +51,7 @@ func change_state(to_state: Callable, immediate: bool = false) -> void:
 		if states.has(to_state_name):
 			if not current_state_name.is_empty() and states[current_state_name].has("leave"):
 				states[current_state_name].leave.call()
-			if not current_state_name.is_empty() and states[to_state_name].has("enter"):
+			if not to_state_name.is_empty() and states[to_state_name].has("enter"):
 				states[to_state_name].enter.call()
 
 			current_state = to_state

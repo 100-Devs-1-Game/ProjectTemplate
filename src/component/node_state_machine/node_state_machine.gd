@@ -1,11 +1,11 @@
-class_name CodimonsFiniteStateMachine
+class_name NodeFiniteStateMachine
 extends Node
 
-signal state_changed(new_state: CodimonsStateMachineState)
+signal state_changed(new_state: NodeStateMachineState)
 
-@export var current_state: CodimonsStateMachineState = null:
+@export var current_state: NodeStateMachineState = null:
 	set = set_current_state
-@export var previous_state: CodimonsStateMachineState = null
+@export var previous_state: NodeStateMachineState = null
 
 # will throw an error if there's no current_state
 @export var allow_no_state: bool = false
@@ -16,7 +16,7 @@ signal state_changed(new_state: CodimonsStateMachineState)
 # disable temporarily
 @export var paused: bool = false
 
-var queued_state: CodimonsStateMachineState
+var queued_state: NodeStateMachineState
 
 
 func _ready():
@@ -27,7 +27,7 @@ func late_ready():
 	assert(
 		current_state or queued_state or allow_no_state, "No FSM initial state " + get_parent().name
 	)
-	for state: CodimonsStateMachineState in get_children():
+	for state: NodeStateMachineState in get_children():
 		state.on_init()
 	if queued_state:
 		current_state = queued_state
@@ -62,13 +62,13 @@ func _unhandled_input(event: InputEvent):
 		current_state.on_unhandled_input(event)
 
 
-func change_state(next_state: CodimonsStateMachineState):
+func change_state(next_state: NodeStateMachineState):
 	if next_state:
 		previous_state = current_state
 		current_state = next_state
 	else:
 		if not allow_no_state:
-			push_error("Not a valid CodimonsStateMachineState")
+			push_error("Not a valid NodeStateMachineState")
 		else:
 			if current_state:
 				current_state.on_exit()
@@ -76,7 +76,7 @@ func change_state(next_state: CodimonsStateMachineState):
 				current_state = null
 
 
-func set_current_state(next_state: CodimonsStateMachineState):
+func set_current_state(next_state: NodeStateMachineState):
 	if not get_parent().is_inside_tree():
 		queued_state = next_state
 		return

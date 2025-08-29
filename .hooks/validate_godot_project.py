@@ -29,7 +29,7 @@ class GodotValidator:
         self.duplicate_uids: Dict[str, List[str]] = defaultdict(list)
         self.errors: List[str] = []
         self.warnings: List[str] = []
-        self.excluded_dirs = excluded_dirs or {'addons', 'builds', '.godot', '.git', 'node_modules', '__pycache__', '.venv'}
+        self.excluded_dirs = excluded_dirs or {'.github', '.hooks', 'builds', '.godot', '.git', 'node_modules', '__pycache__', '.venv'}
 
         # Regex patterns
         # UID definition in .tscn
@@ -281,11 +281,21 @@ class GodotValidator:
             # Convert res:// path to actual file path
             actual_path = self.project_root / res_path[6:]  # Remove "res://"
 
-            if not actual_path.exists():
-                self.errors.append(
-                    f"{file_path.relative_to(self.project_root).as_posix()}: "
-                    f"The file '{res_path}' does not exist"
-                )
+            if actual_path.exists():
+                continue
+
+            lines = content.splitlines()
+            start_idx = match.start()
+            line_num = content.count("\n", 0, start_idx)
+            line = lines[line_num].strip()
+
+            if "FileAccess.file_exists" in line or "DirAccess.dir_exists" in line or line.startswith("#"):
+                continue
+
+            self.errors.append(
+                f"{file_path.relative_to(self.project_root).as_posix()}: "
+                f"The file '{res_path}' does not exist"
+            )
 
     def _validate_uid_paths(self, file_path: Path, content: str):
         """Validate all uid:// paths in a file."""

@@ -1,6 +1,5 @@
 [gd_scene load_steps=10 format=3 uid="uid://btn6jgv0vix7"]
 
-[ext_resource type="FontFile" uid="uid://dve7mgsjik4dg" path="res://addons/phantom_camera/fonts/Nunito-Regular.ttf" id="1_anjxo"]
 [ext_resource type="Theme" uid="uid://bhppejri5dbsf" path="res://addons/phantom_camera/themes/theme.tres" id="1_wql5t"]
 [ext_resource type="Texture2D" uid="uid://rghrkoqrm2ig" path="res://addons/phantom_camera/icons/viewfinder/Select.svg" id="2_71b6g"]
 [ext_resource type="ButtonGroup" uid="uid://dfu0b8jbtyr1n" path="res://addons/phantom_camera/panel/viewfinder/host_list/host_list_item_group.tres" id="3_06a0y"]
@@ -61,7 +60,6 @@ custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 tooltip_text = "Change the viewfinder's camera to the camera of this Phantom Camera Host"
 theme = ExtResource("1_wql5t")
-theme_override_fonts/font = ExtResource("1_anjxo")
 theme_override_font_sizes/font_size = 18
 toggle_mode = true
 button_group = ExtResource("3_06a0y")

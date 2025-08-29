@@ -301,30 +301,11 @@ func clear():
 
 
 func _set_font(font_name, custom_name):
-	var rtl = _ctrls.output
-	if(font_name == null):
-		rtl.remove_theme_font_override(custom_name)
-	else:
-		var dyn_font = FontFile.new()
-		dyn_font.load_dynamic_font('res://addons/gut/fonts/' + font_name + '.ttf')
-		rtl.add_theme_font_override(custom_name, dyn_font)
+	return
 
 
 func set_all_fonts(base_name):
-	_font_name = GutUtils.nvl(base_name, 'Default')
-
-	if(base_name == 'Default'):
-		_set_font(null, 'font')
-		_set_font(null, 'normal_font')
-		_set_font(null, 'bold_font')
-		_set_font(null, 'italics_font')
-		_set_font(null, 'bold_italics_font')
-	else:
-		_set_font(base_name + '-Regular', 'font')
-		_set_font(base_name + '-Regular', 'normal_font')
-		_set_font(base_name + '-Bold', 'bold_font')
-		_set_font(base_name + '-Italic', 'italics_font')
-		_set_font(base_name + '-BoldItalic', 'bold_italics_font')
+	return
 
 
 func set_font_size(new_size):

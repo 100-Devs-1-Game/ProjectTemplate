@@ -2,8 +2,6 @@
 
 [ext_resource type="Script" uid="uid://cjblcocen12r3" path="res://addons/phantom_camera/scripts/panel/updater/download_update_panel.gd" id="1_sx5xq"]
 [ext_resource type="Texture2D" uid="uid://cc0wmici0eic8" path="res://addons/phantom_camera/icons/phantom_camera_logo.png" id="2_f3yo7"]
-[ext_resource type="FontFile" uid="uid://c4mm3of2mc8o5" path="res://addons/phantom_camera/fonts/Nunito-Black.ttf" id="3_h8uk3"]
-[ext_resource type="FontFile" uid="uid://dve7mgsjik4dg" path="res://addons/phantom_camera/fonts/Nunito-Regular.ttf" id="4_gwh4i"]
 [ext_resource type="Texture2D" uid="uid://censw3w53gldn" path="res://addons/phantom_camera/assets/PhantomCameraBtnPrimaryDefault.png" id="5_bonti"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_sjwi2"]
@@ -100,7 +98,6 @@ theme_override_constants/separation = -5
 [node name="NameLabel" type="Label" parent="VBox/VBoxContainer2/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.960784, 0.960784, 0.960784, 1)
-theme_override_fonts/font = ExtResource("3_h8uk3")
 theme_override_font_sizes/font_size = 32
 text = "Phantom Camera"
 horizontal_alignment = 1
@@ -109,7 +106,6 @@ horizontal_alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_color = Color(0.960784, 0.960784, 0.960784, 1)
-theme_override_fonts/font = ExtResource("4_gwh4i")
 theme_override_font_sizes/font_size = 18
 text = "v1.2.3 is available for download."
 horizontal_alignment = 1
@@ -118,7 +114,6 @@ horizontal_alignment = 1
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
-theme_override_fonts/font = ExtResource("4_gwh4i")
 text = "Current version: 0.0.0"
 horizontal_alignment = 1
 
@@ -129,7 +124,6 @@ layout_mode = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0.917647, 0.631373, 0.368627, 1)
 theme_override_colors/font_hover_color = Color(0.721569, 0.454902, 0.192157, 1)
-theme_override_fonts/font = ExtResource("3_h8uk3")
 theme_override_font_sizes/font_size = 18
 text = "Release Notes"
 
@@ -144,7 +138,6 @@ unique_name_in_owner = true
 visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.72549, 0.227451, 0.34902, 1)
-theme_override_fonts/font = ExtResource("3_h8uk3")
 theme_override_font_sizes/font_size = 18
 text = "Potential Breaking Changes
 in new release"
@@ -161,9 +154,6 @@ layout_mode = 2
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="VBox/Center/VBoxContainer/BreakingMarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/normal_font = ExtResource("4_gwh4i")
-theme_override_fonts/bold_font = ExtResource("3_h8uk3")
-theme_override_fonts/mono_font = ExtResource("3_h8uk3")
 theme_override_font_sizes/normal_font_size = 18
 theme_override_font_sizes/bold_font_size = 14
 theme_override_font_sizes/mono_font_size = 12
@@ -177,7 +167,6 @@ unique_name_in_owner = true
 visible = false
 layout_mode = 2
 mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("3_h8uk3")
 theme_override_font_sizes/font_size = 18
 theme_override_icons/arrow = SubResource("ImageTexture_sjwi2")
 theme_override_styles/normal = SubResource("StyleBoxFlat_insma")
@@ -229,7 +218,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.960784, 0.960784, 0.960784, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_h8uk3")
 theme_override_font_sizes/font_size = 20
 text = "Update"
 horizontal_alignment = 1
@@ -241,8 +229,6 @@ theme_override_constants/margin_top = 10
 
 [node name="RichTextLabel" type="RichTextLabel" parent="VBox/MarginContainer"]
 layout_mode = 2
-theme_override_fonts/normal_font = ExtResource("4_gwh4i")
-theme_override_fonts/mono_font = ExtResource("3_h8uk3")
 theme_override_font_sizes/normal_font_size = 12
 theme_override_font_sizes/mono_font_size = 12
 bbcode_enabled = true

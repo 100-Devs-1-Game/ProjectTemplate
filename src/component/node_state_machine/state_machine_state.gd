@@ -1,4 +1,4 @@
-class_name CodimonsStateMachineState
+class_name NodeStateMachineState
 extends Node
 
 signal state_entered
@@ -61,5 +61,5 @@ func is_current_state() -> bool:
 	return get_state_machine().current_state == self
 
 
-func get_state_machine() -> CodimonsFiniteStateMachine:
+func get_state_machine() -> NodeFiniteStateMachine:
 	return get_parent()

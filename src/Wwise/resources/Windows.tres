@@ -1,0 +1,5 @@
+[gd_resource type="WwisePlatformInfo" format=3 uid="uid://b77yuhoy8pvh0"]
+
+[resource]
+platform_name = "Windows"
+platform_path = "generated_soundbanks/windows"

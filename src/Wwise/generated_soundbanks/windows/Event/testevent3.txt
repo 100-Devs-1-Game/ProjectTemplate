@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	155015306	testevent3			\Default Work Unit\testevent3	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	129	MIDI note velocity			\MIDI note velocity	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	706598659	Modulator LFO (Custom)				
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	15291194	Modulator Envelope (Custom)				
+	806591406	Modulator Envelope (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	511021499	ALARM 01	Wwise Synth One		\Actor-Mixer Hierarchy\Factory Synth One\SFX\ALARM 01\ALARM 01	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+

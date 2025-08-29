@@ -1,0 +1,26 @@
+{
+ "PluginInfo": {
+  "Platform": "Linux",
+  "BasePlatform": "Linux",
+  "PluginLibs": [
+   {
+    "LibName": "Wwise Synth One",
+    "LibId": "9699330",
+    "Type": "Source",
+    "DLL": "AkSynthOne",
+    "StaticLib": "AkSynthOneSource"
+   },
+   {
+    "LibName": "System",
+    "LibId": "11403271",
+    "Type": "AudioDevice"
+   },
+   {
+    "LibName": "No Output",
+    "LibId": "11862023",
+    "Type": "AudioDevice"
+   }
+  ],
+  "FileHash": "{F0FEC1DB-47AE-AE78-7AE0-1B9806BFE1D6}"
+ }
+}

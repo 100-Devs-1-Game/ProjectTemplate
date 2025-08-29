@@ -19,6 +19,7 @@ config/features=PackedStringArray("4.4", "GL Compatibility")
 Logger="*res://addons/godot-logger/logger.gd"
 PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_camera_manager.gd"
 EventBus="*res://global/event_bus.gd"
+WwiseRuntimeManager="*res://addons/Wwise/runtime/wwise_runtime_manager.gd"
 
 [debug_draw_3d]
 
@@ -44,3 +45,10 @@ renderer/rendering_method.mobile="gl_compatibility"
 [version_check]
 
 required_version="4.4.1"
+
+[wwise]
+
+common_user_settings/root_output_path="res://Wwise"
+project_settings/windows_platform_info="res://Wwise/resources/Windows.tres"
+project_settings/mac_platform_info="res://Wwise/resources/Mac.tres"
+project_settings/linux_platform_info="res://Wwise/resources/Linux.tres"

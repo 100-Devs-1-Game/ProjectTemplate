@@ -283,7 +283,7 @@ class GodotValidator:
 
             if actual_path.exists():
                 continue
-            
+
             lines = content.splitlines()
             start_idx = match.start()
             line_num = content.count("\n", 0, start_idx)

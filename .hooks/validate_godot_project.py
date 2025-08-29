@@ -29,7 +29,7 @@ class GodotValidator:
         self.duplicate_uids: Dict[str, List[str]] = defaultdict(list)
         self.errors: List[str] = []
         self.warnings: List[str] = []
-        self.excluded_dirs = excluded_dirs or {'addons', 'builds', '.godot', '.git', 'node_modules', '__pycache__', '.venv'}
+        self.excluded_dirs = excluded_dirs or {'.github', '.hooks', 'builds', '.godot', '.git', 'node_modules', '__pycache__', '.venv'}
 
         # Regex patterns
         # UID definition in .tscn

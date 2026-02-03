@@ -77,7 +77,7 @@ func change_state(next_state: NodeStateMachineState):
 
 
 func set_current_state(next_state: NodeStateMachineState):
-	if not get_parent().is_inside_tree():
+	if not is_inside_tree() or not get_parent().is_inside_tree():
 		queued_state = next_state
 		return
 

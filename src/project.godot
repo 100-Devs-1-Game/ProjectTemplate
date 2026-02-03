@@ -12,7 +12,8 @@ config_version=5
 
 config/name="Project Template"
 run/main_scene="uid://cygqjanirnqqt"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/features=PackedStringArray("4.5", "GL Compatibility")
+config/tags=PackedStringArray("100devs")
 
 [autoload]
 
